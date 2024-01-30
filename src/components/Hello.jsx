@@ -4,10 +4,10 @@ function displayName(){
     return 'wow';
 }
 
-function Hello(props) {
+function Hello({persons}) {
   return (
     <div>
-      <h1>{props.person.msg} {props.person.emoji} {props.person.name} {props.person.seatNumbers}</h1>
+      <h1>{persons.msg} {persons.emoji} {persons.name} {persons.seatNumbers}</h1>
       <h2>{10 + 20}</h2>
       <h3>{displayName()}</h3>
     </div>
