@@ -4,8 +4,7 @@ function displayName(){
     return 'wow';
 }
 
-function Hello(props) {
-    const { name, msg } = props
+function Hello({ name, msg }) {
   return (
     <div>
       <h1>{msg} {name}</h1>
