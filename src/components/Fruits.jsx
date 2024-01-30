@@ -8,12 +8,14 @@ export default function Fruits() {
   ];
   return (
     <div>
-      {fruits.map((fruit) => (
-        <li key={fruit.name}>
+      <ul>
+        {fruits.map((fruit) => (
+          <li key={fruit.name}>
             {fruit.name}
             {fruit.img}
-            </li>
-      ))}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
