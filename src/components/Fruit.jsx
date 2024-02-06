@@ -1,7 +1,10 @@
 export default function Fruit(props){
-    return <div>
-        <li>
-        {props.emoji} {props.name} {props.price}
-        </li>
-    </div>
+    return (
+            (<li>{props.emoji} {props.name} {props.price} {props.soldout ? 'soldout' : ''}</li>) 
+            
+    )
+        // {/* {props.emoji} {props.name} {props.price} */}
+
+        
+    
 }
