@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Hello from './components/Hello'
 import Fruits from './components/Fruits'
 import ConditionalComponent from './components/ConditionalComponent'
+import Message from './components/Message'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -16,6 +17,7 @@ function App() {
       <Hello persons={person}/>
       <Fruits/>
       <ConditionalComponent/>
+      <Message/>
     </div>
   )
 }
