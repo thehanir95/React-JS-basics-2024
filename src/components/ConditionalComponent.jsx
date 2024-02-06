@@ -2,12 +2,12 @@ import Code from "./Code";
 import Welcome from "./Welcome";
 
 export default function ConditionalComponent() {
-    const display = false;
-    let msg1 = <h1>This is msg1</h1>
-    let msg2 = <h1>This is msg2</h1>
+    const display = true;
+    let msg = ''
     if(display) {
-        return msg1
+        msg = <h1>This is msg1</h1>
     } else{
-        return msg2
+        msg = <h1>This is msg2</h1>
     }
+    return msg
 } 
