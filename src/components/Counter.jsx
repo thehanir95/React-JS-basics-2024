@@ -4,11 +4,11 @@ export default function Counter(){
     const [count, setCount] = useState(0);
     const [incrementBy, setIncrementBy] = useState(1);
     function incrementClick() {
-        setCount(count + 1)
+        setCount(count + incrementBy)
     }
 
     function decrementClick() {
-        setCount(count - 1)
+        setCount(count - incrementBy)
     }
 
     function incrementByClick() {
